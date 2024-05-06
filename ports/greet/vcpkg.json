@@ -1,10 +1,11 @@
 {
     "name": "greet",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "port-version": 4,
     "description": "greet library.",
     "homepage": "https://github.com/mojool1984/greet",
     "license": "MIT",
+    "supports": "windows",
     "dependencies": [
       {
         "name": "vcpkg-cmake",

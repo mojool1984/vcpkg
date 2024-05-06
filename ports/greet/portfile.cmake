@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO mojool1984/greet
     REF "v${VERSION}"
-    SHA512 66efb31c05be45e3614fee0fccbb94c652681896a063f6c84a1824672dd92ad5f38582463dd13bb24ad0e84505f53167a1a09fcdd437ebf0a8fa66959b4ea84c
+    SHA512 66802ed3727806d26ab05582870ee63aefd3c42b16fc16d197ad84bd488c2975481ea8e88afff8ed105e32d1866f8306f7f00906a9f8b0525a0e99d32920f8bc
     HEAD_REF main
 )
 
@@ -19,7 +19,7 @@ vcpkg_cmake_configure(
 )
 
 vcpkg_cmake_install()
-#vcpkg_cmake_config_fixup(CONFIG_PATH "lib/cmake/${PORT}")
+vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/greet)
 
 #file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 #file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/lib")
