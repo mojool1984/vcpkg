@@ -1,9 +1,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO mojool1984/greet
+    REPO mojool1984/greet2
     REF "v${VERSION}"
-    SHA512 66802ed3727806d26ab05582870ee63aefd3c42b16fc16d197ad84bd488c2975481ea8e88afff8ed105e32d1866f8306f7f00906a9f8b0525a0e99d32920f8bc
-    HEAD_REF main
+    SHA512 4bcfaced8adbaf6bcee3493e5ef5729675a565a104f6f82a6866a187701fa5c1b5257431dd35557a0e1c3444bc5df0d0f69d79cef2bf3e68e630abe233a3f346
+    HEAD_REF master
 )
 
 if(NOT VCPKG_TARGET_IS_WINDOWS OR VCPKG_TARGET_IS_MINGW)
@@ -19,7 +19,7 @@ vcpkg_cmake_configure(
 )
 
 vcpkg_cmake_install()
-vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/greet)
+vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/greet2)
 
 #vcpkg_copy_pdbs()
 
